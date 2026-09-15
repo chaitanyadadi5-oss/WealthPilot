@@ -5,7 +5,7 @@
    Backend: FastAPI
    ============================================================ */
 
-const API_BASE = "http://127.0.0.1:8000";
+const API_BASE_URL = "https://wealthpilot-bj3l.onrender.com";;
 
 let authToken = localStorage.getItem("finance_token");
 let currentUser = null;
