@@ -79,6 +79,7 @@ app.add_middleware(
     allow_origins=[
         "http://127.0.0.1:5500",
         "http://localhost:5500",
+        "https://wealthpilot-1.onrender.com",
     ],
     allow_credentials=True,
     allow_methods=["*"],
