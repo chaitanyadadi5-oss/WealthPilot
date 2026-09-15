@@ -570,7 +570,7 @@ function renderDashboard() {
         `${formatNumber(progress)}%`
     );
 
-    renderCategoryChart(monthlyTransactions);
+    renderCategoryChart(month);
     renderRecentTransactions();
 }
 
@@ -3287,6 +3287,11 @@ function bindGlobalEvents() {
     bindClick(
         "smart-entry-button",
         openSmartEntryModal
+    );
+    
+    bindClick(
+    "smart-entry-button-page",
+    openSmartEntryModal
     );
 
     bindClick(
