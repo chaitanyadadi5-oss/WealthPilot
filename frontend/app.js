@@ -651,16 +651,16 @@ function renderCategoryChart(month) {
             labels,
             datasets: [{
     data: values,
-    backgroundColor: [
-        "#4F46E5",
-        "#10B981",
-        "#F59E0B",
-        "#EF4444",
-        "#8B5CF6",
-        "#06B6D4",
-        "#EC4899",
-        "#64748B"
-    ],
+   backgroundColor: [
+    "#10B981", // Emerald
+    "#6366F1", // Indigo
+    "#F59E0B", // Amber
+    "#F43F5E", // Rose
+    "#8B5CF6", // Purple
+    "#06B6D4", // Cyan
+    "#EC4899", // Pink
+    "#64748B"  // Slate
+],
     borderWidth: 2,
     borderColor: "#FFFFFF"
 }]
