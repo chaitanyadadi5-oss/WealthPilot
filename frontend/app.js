@@ -5,7 +5,7 @@
    Backend: FastAPI
    ============================================================ */
 
-const API_BASE_URL = "https://wealthpilot-bj3l.onrender.com";;
+const API_BASE = "https://wealthpilot-bj3l.onrender.com";
 
 let authToken = localStorage.getItem("finance_token");
 let currentUser = null;
@@ -3123,7 +3123,7 @@ async function saveProfile() {
         renderProfile();
 
         // Explicitly show the saved summary.
-        showProfileSummary();
+        renderProfile();
 
         showToast(
             "Profile and preferences saved.",
@@ -3350,7 +3350,7 @@ function bindGlobalEvents() {
 
     bindClick(
     "cancel-profile-edit",
-    showProfileSummary
+    renderProfile
     );
     bindClick(
         "use-ai-category",
